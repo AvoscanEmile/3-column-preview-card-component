@@ -1,5 +1,5 @@
-# FrontEndMentor__Third-Project
-- **This is my third Front-End Mentor project. If you want to see it live you can do it here: https://avoscanemile.github.io/FrontEndMentor__Third-Project/**
+# 3-column preview card component
+- **This is my third Front-End Mentor project. If you want to see it live you can do it here: https://avoscanemile.github.io/3-column-preview-card-component/**
 
 - **You can see the desktop and the mobile design on the /designs folder of this project.**
 
