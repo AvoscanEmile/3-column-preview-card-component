@@ -20,6 +20,10 @@
     --ff-p: 'Lexend Deca', sans-serif;
     --ff-h: 'Big Shoulders Display', cursive;
 
+    /* Shadows */
+
+    --shadow: 0px 5px 12px rgba(0, 0, 0, 0.30);
+
 }
 
 /* General attributes */
@@ -33,28 +37,24 @@ html {
 }
 
 body {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 1fr auto 1fr;
-    grid-gap: 30px;
-    grid-template-areas: 
-    ". . ."
-    ". card ."
-    ". footer .";
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     margin: 0;
 }
 
 /* Card Styling */
 
-.container {
-    grid-area: card;
+.main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1200px;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: var(--shadow);
+    margin: 50px 35px
 }
 
 .card {
@@ -121,23 +121,4 @@ body {
 
 .card__button--dark-blue {
     color: var(--clr-dark-blue);
-}
-
-/* Attribution */
-
-.attribution {
-    grid-area: footer;
-    align-self: end;
-    justify-self: center;
-}
-
-.attribution__text {
-    font-size: var(--fs-a);
-    font-family: var(--ff-p);
-    font-weight: var(--fw-regular);
-    text-align: center;
-}
-
-.attribution__link:hover {
-    color: var(--clr-blue);
 }
